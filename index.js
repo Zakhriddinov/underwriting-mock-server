@@ -11,10 +11,17 @@ const checkListRouting = require("./routing/check-list");
 const stagesRouting = require("./routing/stages");
 const parameterListRouting = require("./routing/parameter-list");
 
+// Serve static files from the "public" directory
+app.use(express.static('public'));
+
 const cors = require("cors");
 
 const app = express();
 const PORT = 3001;
+
+app.get('/', (req, res) => {
+  res.send('Hello, Vercel!');
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

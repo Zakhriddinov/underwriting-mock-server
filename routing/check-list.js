@@ -6,12 +6,14 @@ router.use(bodyParser.json());
 const uuid = require("uuid");
 
 const readData = () => {
-  const data = fs.readFileSync("db/check-list.json");
+  const dataPath = path.join(__dirname, "db", "check-list.json");
+  const data = fs.readFileSync(dataPath, "utf8");
   return JSON.parse(data);
 };
 
 const writeData = (data) => {
-  fs.writeFileSync("db/check-list.json", JSON.stringify(data, null, 2));
+  const dataPath = path.join(__dirname, "db", "check-list.json");
+  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), "utf8");
 };
 
 const readDataStages = () => {
