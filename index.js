@@ -16,6 +16,9 @@ const cors = require("cors");
 const app = express();
 const PORT = 3001;
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use(bodyParser.json());
 app.use(cors());
 
