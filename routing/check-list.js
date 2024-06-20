@@ -1,30 +1,34 @@
 const express = require("express");
 const fs = require("fs");
+
 const bodyParser = require("body-parser");
 const router = express.Router();
 router.use(bodyParser.json());
 const uuid = require("uuid");
 
-const dataPath = path.join(__dirname, "db", "check-list.json");
-const stagesDataPath = path.join(__dirname, "db", "stages.json");
+const readData = () => {
+  const data = fs.readFileSync("db/check-list.json");
+  return JSON.parse(data);
+};
+
+const writeData = (data) => {
+  fs.writeFileSync("db/check-list.json", JSON.stringify(data, null, 2));
+};
+
+const readDataStages = () => {
+  const data = fs.readFileSync("db/stages.json");
+  return JSON.parse(data);
+};
 
 router.post("/ql", (req, res) => {
   const data = readData();
   res.json(data);
 });
-const readData = () => {
-  const data = fs.readFileSync(dataPath, "utf8");
-  return JSON.parse(data);
-};
 
-const writeData = (data) => {
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), "utf8");
-};
-
-const readDataStages = () => {
-  const data = fs.readFileSync(stagesDataPath, "utf8");
-  return JSON.parse(data);
-};
+router.get("/ql", (req, res) => {
+  const data = readData();
+  res.json(data);
+});
 
 function findStagesName(stagesId) {
   const stagesData = readDataStages();
@@ -32,18 +36,8 @@ function findStagesName(stagesId) {
   return findStageName.name;
 }
 
-app.get("/ql", (req, res) => {
-  const data = readData();
-  res.json(data);
-});
-
-app.post("/ql", (req, res) => {
-  const data = readData();
-  res.json(data);
-});
-
 // POST new
-app.post("/create", (req, res) => {
+router.post("/create", (req, res) => {
   const data = readData();
   const newQuestion = req.body;
   newQuestion.id = uuid.v4();
@@ -57,7 +51,7 @@ app.post("/create", (req, res) => {
 });
 
 // GET role by ID
-app.get("/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   const data = readData();
   const id = req.params.id;
   const list = data.find((emp) => emp.id === id);
@@ -68,7 +62,7 @@ app.get("/:id", (req, res) => {
   }
 });
 
-app.put("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   const data = readData();
   const id = req.params.id;
   const updateData = req.body;
