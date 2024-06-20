@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "label": "Главная страница",
+    "icon": "home.svg",
+    "jsAction": "/assets/components/development/development.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 2,
+    "label": "Список заявок",
+    "icon": "article.svg",
+    "jsAction": "/underwriting/modules/application/applications.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 3,
+    "label": "Настройки",
+    "icon": "settings.svg",
+    "jsAction": "/assets/components/development/development.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 4,
+    "label": "Управление пользователями",
+    "icon": "settings.svg",
+    "jsAction": null,
+    "link": null,
+    "parentId": 1,
+    "parentName": "UW",
+    "items": [
+      {
+        "id": 5,
+        "label": "Список участников",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/employees/employees.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 3,
+        "parentName": ""
+      },
+      {
+        "id": 6,
+        "label": "Список ролей",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/roles/roles.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 3,
+        "parentName": ""
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "label": "Безопасность",
+    "icon": "security.svg",
+    "jsAction": "/underwriting/modules/admin/security/main.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 8,
+    "label": "Справочники",
+    "icon": "article.svg",
+    "jsAction": "/underwriting/modules/admin/references/references.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 9,
+    "label": "Настройка верификации",
+    "icon": "settings.svg",
+    "jsAction": "/underwriting/modules/admin/verification-settings/verifications-settings.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 10,
+    "label": "Настройка Чек-листов",
+    "icon": "settings.svg",
+    "jsAction": null,
+    "link": null,
+    "items": [
+      {
+        "id": 11,
+        "label": "Список проверок",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/checklist-settings/check-list/check-lists.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 10,
+        "parentName": ""
+      },
+      {
+        "id": 12,
+        "label": "Список параметров",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/checklist-settings/parameter-list/parameter-lists.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 10,
+        "parentName": ""
+      }
+    ],
+    "parentId": 333,
+    "parentName": "UW"
+  }
+]

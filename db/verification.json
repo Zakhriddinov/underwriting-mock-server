@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "name": "Тест",
+    "verificationType": "1",
+    "note": "test",
+    "votingType": "1",
+    "state": "A",
+    "stateText": "Актив"
+  }
+]

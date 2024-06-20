@@ -1,0 +1,37 @@
+[
+  {
+    "id": "b6b01902-f385-43c2-b90d-b07ee73d6a1f",
+    "code": "11002",
+    "name": "Zaxriddinov Sardor Otabek o'g'li",
+    "filialCode": "00365",
+    "codeCbu": "666",
+    "localeCode": "333",
+    "phone": "+998123132132",
+    "login": "test",
+    "password": "test",
+    "confirmPassword": "S@rdor123",
+    "email": "test@gmail.com",
+    "roles": [
+      "75a4189a-4756-4f87-8f6f-43d19c27d323"
+    ],
+    "twoStepVerification": "Y",
+    "state": "A",
+    "stateText": "Актив"
+  },
+  {
+    "code": "11002",
+    "name": "Иванов Иван Иванович",
+    "filialCode": "00365",
+    "codeCbu": "111",
+    "localeCode": "222",
+    "phone": "+998123131232",
+    "login": "1231321",
+    "password": "S@rdor0317",
+    "confirmPassword": "S@rdor0317",
+    "email": "test@gmail.com",
+    "roles\"": "75a4189a-4756-4f87-8f6f-43d19c27d323",
+    "state": "A",
+    "stateText": "Актив",
+    "id": "6a1ff20a-b062-490a-aa15-4e85e767107c"
+  }
+]

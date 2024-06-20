@@ -1,0 +1,20 @@
+[
+  {
+    "id": "6ede5ae3-2adf-4b63-8693-74ad4332477d",
+    "code": "001",
+    "name": "name",
+    "note": "note",
+    "orderNum": "1",
+    "state": "A",
+    "stateText": "Актив"
+  },
+  {
+    "code": "342",
+    "name": "34243",
+    "note": "23424",
+    "orderNum": "242424",
+    "state": "A",
+    "id": "58f01c0f-533e-455f-96b2-073abbe47694",
+    "stateText": "Актив"
+  }
+]

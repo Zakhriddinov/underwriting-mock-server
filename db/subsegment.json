@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "userId": "1",
+    "productId": 921,
+    "name": "Средний",
+    "state": "A",
+    "stateText": "Актив"
+  },
+  {
+    "id": 2,
+    "productId": 921,
+    "name": "Малый",
+    "state": "A",
+    "stateText": "Актив"
+  },
+  {
+    "id": 3,
+    "productId": 921,
+    "name": "Корпоративный",
+    "state": "A",
+    "stateText": "Актив"
+  }
+]

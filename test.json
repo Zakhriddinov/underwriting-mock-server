@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "label": "Главная страница",
+    "icon": "home.svg",
+    "jsAction": "/assets/components/development/development.jsp",
+    "link": null,
+    "items": null,
+    "parentId": 1,
+    "parentName": "UW"
+  },
+  {
+    "id": 4,
+    "label": "Управление пользователями",
+    "icon": "settings.svg",
+    "jsAction": null,
+    "link": null,
+    "parentId": 1,
+    "parentName": "UW",
+    "items": [
+      {
+        "id": 5,
+        "label": "Список участников",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/employees/employees.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 3,
+        "parentName": ""
+      },
+      {
+        "id": 6,
+        "label": "Список ролей",
+        "icon": null,
+        "jsAction": "/underwriting/modules/admin/roles/roles.jsp",
+        "link": null,
+        "items": null,
+        "parentId": 3,
+        "parentName": ""
+      }
+    ]
+  }
+]

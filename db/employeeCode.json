@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "code": 11002,
+      "name": "Zaxriddinov Sardor Otabek o'g'li",
+      "filialCode": "00365",
+      "codeCbu": "666",
+      "localeCode": "333",
+      "state": "A",
+      "stateText": "Актив"
+    },
+    {
+      "id": 2,
+      "code": 11002,
+      "name": "Иванов Иван Иванович",
+      "filialCode": "00365",
+      "codeCbu": "111",
+      "localeCode": "222",
+      "state": "A",
+      "stateText": "Актив"
+    }
+  ]
